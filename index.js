@@ -6,7 +6,7 @@ let checksum = "";
 input.addEventListener("input", (e) => {
   const replaced = e.target.value.replace(/\s/g, "");
   if (replaced.length !== 16 * 2) {
-    error.innerText = `길이는 16바이트여야 합니다. 현재 길이: ${replaced.length}`;
+    error.innerText = `길이는 16바이트여야 합니다. 현재 길이: ${replaced.length / 2}`;
     return;
   }
   error.innerText = "";
